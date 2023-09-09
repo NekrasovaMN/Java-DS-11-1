@@ -7,7 +7,7 @@ public class MovieManagerTest {
 
     @Test
     public void test() {
-       MovieManager manager = new MovieManager();
+        MovieManager manager = new MovieManager();
 
         String[] expected = {}; // Вывод пустого значения
         String[] actual = manager.findAll();
@@ -38,14 +38,14 @@ public class MovieManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-  //  @Test
-  //  public void testFindLastNull() {
-      //  MovieManager manager = new MovieManager();
+    @Test
+    public void testFindLastNull() {
+        MovieManager manager = new MovieManager();
 
-      //  String[] expected = {}; //Вывод пустого значения
-      //  String[] actual = manager.findLast();
-      //  Assertions.assertArrayEquals(expected, actual);
-   // }
+        String[] expected = {}; //Вывод пустого значения
+        String[] actual = manager.findLast();
+        Assertions.assertArrayEquals(expected, actual);
+    }
 
     @Test
     public void testFindLastOne() {
